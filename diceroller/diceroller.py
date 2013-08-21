@@ -54,7 +54,11 @@ class rolls(list):
 
         return self.resultfunc(self.cached)
 
-    def roll(self):
+    # alias roll
+    roll = result
+
+    def reroll(self):
+        self.cached = None
         return self.result()
 
 
